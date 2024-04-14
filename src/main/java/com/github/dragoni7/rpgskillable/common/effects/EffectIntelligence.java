@@ -19,7 +19,7 @@ public class EffectIntelligence extends MobEffect {
 		
 		if (ModList.get().isLoaded("irons_spellbooks")) {
 			this.addAttributeModifier(AttributeRegistry.SPELL_POWER.get(), SPELL_DAMAGE.toString(), 0.2f, AttributeModifier.Operation.MULTIPLY_TOTAL);
-			this.addAttributeModifier(AttributeRegistry.MANA_REGEN.get(), MANA_REGEN_BONUS.toString(), 0.2f, AttributeModifier.Operation.MULTIPLY_Base);
+			this.addAttributeModifier(AttributeRegistry.MANA_REGEN.get(), MANA_REGEN_BONUS.toString(), 0.2f, AttributeModifier.Operation.MULTIPLY_BASE);
 		}
 	}
 
