@@ -53,8 +53,8 @@ public class RpgSkillableLang extends LanguageProvider  {
 		add("effect.rpgskillable.strengthened.description", "Increases attack damage by 1 per level. Also decreases attack speed by 0.1 per level.");
 		add("effect.rpgskillable.endurance.description", "Adds regenerating endurance feathers per level");
 		add("effect.rpgskillable.dexterity.description", "Increases attack speed by 0.15 and increases movespeed per level.");
-		add("effect.rpgskillable.intelligence.description", "Increases spell damage by 1 per level.");
-		add("effect.rpgskillable.mind.description", "Increases mana by 20% per level.");
+		add("effect.rpgskillable.intelligence.description", "Increases spell damage by 20% per level and increases mana regen by 20^ per level.");
+		add("effect.rpgskillable.mind.description", "Increases mana by 20% per level, reduces cast time by 10% per level, and reduces cooldowns by 5% per level.");
 	}
 
 }
