@@ -117,6 +117,11 @@ repositories {
         name = "Iron's Maven - Release"
         url = "https://code.redspace.io/releases"
     }
+
+    maven {
+        name = "Iron's Maven - Snapshots"
+        url = "https://code.redspace.io/snapshots"
+    }
     
     // feathers
     maven { url "https://www.cursemaven.com" }
@@ -175,6 +180,11 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             artifact jar
+        }
+        mavenJava(MavenPublication) {
+            artifactId project.archivesBaseName
+            artifact jar
+            artifact sourcesJar
         }
     }
     repositories {
