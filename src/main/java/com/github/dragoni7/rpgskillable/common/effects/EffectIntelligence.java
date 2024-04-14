@@ -2,8 +2,8 @@ package com.github.dragoni7.rpgskillable.common.effects;
 
 import java.util.UUID;
 
-import com.hollingsworth.arsnouveau.ArsNouveau;
-import com.hollingsworth.arsnouveau.api.perk.PerkAttributes;
+import io.redspace.ironsspellbooks.IronsSpellbooks;
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -17,8 +17,8 @@ public class EffectIntelligence extends MobEffect {
 	protected EffectIntelligence() {
 		super(MobEffectCategory.BENEFICIAL, 0X3292b3);
 		
-		if (ModList.get().isLoaded(ArsNouveau.MODID)) {
-			this.addAttributeModifier(PerkAttributes.SPELL_DAMAGE_BONUS.get(), SPELL_DAMAGE.toString(), 1.0f, AttributeModifier.Operation.ADDITION);
+		if (ModList.get().isLoaded(IronsSpellbooks.MODID)) {
+			this.addAttributeModifer(AttributeRegistry.SPELL_POWER.get(), 
 		}
 	}
 
