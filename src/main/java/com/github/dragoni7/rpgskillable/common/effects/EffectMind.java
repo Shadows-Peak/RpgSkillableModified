@@ -19,8 +19,8 @@ public class EffectMind extends MobEffect {
 		super(MobEffectCategory.BENEFICIAL, 0X373f8c);
 		if (ModList.get().isLoaded("irons_spellbooks")) {
 			this.addAttributeModifier(AttributeRegistry.MAX_MANA.get(), MAX_MANA_BONUS.toString(), 0.2f, AttributeModifier.Operation.MULTIPLY_TOTAL);
-			this.addAttributeModifier(AttributeRegistry.CAST_TIME_REDUCTION.get(), CAST_TIME_REDUCTION_BONUS.toString(), -0.1f, AttributeModifier.Operation.MULTIPLY_BASE);
-			this.addAttributeModifier(AttributeRegistry.COOLDOWN_REDUCTION.get(), COOLDOWN_REDUCTION_BONUS.toString(), -0.05f, AttributeModifier.Operation.MULTIPLY_BASE);
+			this.addAttributeModifier(AttributeRegistry.CAST_TIME_REDUCTION.get(), CAST_TIME_REDUCTION_BONUS.toString(), 0.1f, AttributeModifier.Operation.MULTIPLY_BASE);
+			this.addAttributeModifier(AttributeRegistry.COOLDOWN_REDUCTION.get(), COOLDOWN_REDUCTION_BONUS.toString(), 0.05f, AttributeModifier.Operation.MULTIPLY_BASE);
 		}
 	}
 
