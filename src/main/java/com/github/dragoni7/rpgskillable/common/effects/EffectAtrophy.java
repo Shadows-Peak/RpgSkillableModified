@@ -2,8 +2,7 @@ package com.github.dragoni7.rpgskillable.common.effects;
 
 import java.util.UUID;
 
-import com.hollingsworth.arsnouveau.ArsNouveau;
-import com.hollingsworth.arsnouveau.api.perk.PerkAttributes;
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -22,8 +21,8 @@ public class EffectAtrophy extends MobEffect {
 		this.addAttributeModifier(Attributes.ATTACK_DAMAGE, ATTACK_DAMAGE_UUID.toString(), -0.75f, AttributeModifier.Operation.MULTIPLY_TOTAL);
 		this.addAttributeModifier(Attributes.ATTACK_SPEED, ATTACK_SPEED_UUID.toString(), -0.95f, AttributeModifier.Operation.MULTIPLY_TOTAL);
 		
-		if (ModList.get().isLoaded(ArsNouveau.MODID)) {
-			this.addAttributeModifier(PerkAttributes.SPELL_DAMAGE_BONUS.get(), SPELL_DAMAGE.toString(), -0.75f, AttributeModifier.Operation.MULTIPLY_TOTAL);
+		if (ModList.get().isLoaded("irons_spellbooks")) {
+			this.addAttributeModifier(AttributeRegistry.SPELL_POWER.get(), SPELL_DAMAGE.toString(), -0.75f, AttributeModifier.Operation.MULTIPLY_TOTAL);
 		}
 	}
 	
