@@ -20,11 +20,11 @@ public class EffectDexterity extends MobEffect {
 	protected EffectDexterity() {
 		super(MobEffectCategory.BENEFICIAL, 0Xeddf82);
 		
-		this.addAttributeModifier(Attributes.ATTACK_SPEED, ATTACK_SPEED_UUID.toString(), 0.15f, AttributeModifier.Operation.ADDITION);
-		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, MOVE_SPEED_UUID.toString(), 0.1f, AttributeModifier.Operation.MULTIPLY_BASE);
+		this.addAttributeModifier(Attributes.ATTACK_SPEED, ATTACK_SPEED_UUID.toString(), 0.025f, AttributeModifier.Operation.ADDITION);
+		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, MOVE_SPEED_UUID.toString(), 0.015f, AttributeModifier.Operation.MULTIPLY_BASE);
 		
 		if (ModList.get().isLoaded(Feathers.MODID)) {
-			this.addAttributeModifier(FeathersAttributes.FEATHER_REGEN.get(), REGEN_FEATHERS_BONUS.toString(), 0.5f, AttributeModifier.Operation.ADDITION);
+			this.addAttributeModifier(FeathersAttributes.FEATHER_REGEN.get(), REGEN_FEATHERS_BONUS.toString(), 0.08f, AttributeModifier.Operation.ADDITION);
 		}
 	}
 }
