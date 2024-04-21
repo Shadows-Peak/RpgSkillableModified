@@ -16,7 +16,7 @@ public class EffectEndurance extends MobEffect {
 	protected EffectEndurance() {
 		super(MobEffectCategory.BENEFICIAL, 0X717a96);
 		if (ModList.get().isLoaded(Feathers.MODID)) {
-			this.addAttributeModifier(FeathersAttributes.MAX_FEATHERS.get(), MAX_FEATHERS_BONUS.toString(), 2.0f, AttributeModifier.Operation.ADDITION);
+			this.addAttributeModifier(FeathersAttributes.MAX_FEATHERS.get(), MAX_FEATHERS_BONUS.toString(), 0.5f, AttributeModifier.Operation.ADDITION);
 		}
 	}
 }
