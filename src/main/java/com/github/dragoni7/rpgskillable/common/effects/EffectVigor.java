@@ -13,7 +13,8 @@ public class EffectVigor extends MobEffect {
 
 	protected EffectVigor() {
 		super(MobEffectCategory.BENEFICIAL, 0Xe86dcf);
-		this.addAttributeModifier(Attributes.MAX_HEALTH, MAX_HEALTH_UUID.toString(), 4.0f, AttributeModifier.Operation.ADDITION);
+		
+		this.addAttributeModifier(Attributes.MAX_HEALTH, MAX_HEALTH_UUID.toString(), (2.0f / 3.0f), AttributeModifier.Operation.ADDITION);
 	}
 
 }
